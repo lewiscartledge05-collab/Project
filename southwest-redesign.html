@@ -402,7 +402,11 @@
 
   /* ---------- TEAM ---------- */
   .team{
+    display:none;
     padding:100px 0;
+  }
+  .team.open{
+    display:block;
   }
   .team .eyebrow{color:var(--moss);}
   .team h2{
@@ -1265,6 +1269,16 @@
     });
   }, {threshold:0.15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  document.querySelectorAll('a[href="#team"]').forEach(link=>{
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      const team = document.getElementById('team');
+      team.classList.add('open');
+      team.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+      team.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
 </script>
 
 </body>
