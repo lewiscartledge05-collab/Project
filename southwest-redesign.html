@@ -408,6 +408,9 @@
   }
 
   /* ---------- TEAM ---------- */
+  .team-prompt{
+    padding:80px 0 0;
+  }
   .team{
     display:none;
     padding:100px 0;
@@ -1048,6 +1051,96 @@
 
 <svg class="divider flip" viewBox="0 0 1180 34" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34 Q 295 0 590 20 T 1180 10 V34 Z" fill="#1C2B18"/></svg>
 
+<section class="team-prompt">
+  <div class="wrap" style="text-align:center;">
+    <div class="eyebrow" style="justify-content:center;">The people behind it</div>
+    <h2 style="margin:16px 0 24px;">Meet the team behind the work.</h2>
+    <a href="#team" class="btn btn-ghost">Meet the team &rarr;</a>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="eyebrow">The people behind it</div>
+    <h2 class="reveal">Meet the team.</h2>
+    <div class="team-grid">
+
+      <div class="team-card reveal">
+        <img src="team-photos/tom_moody.jpg" alt="Tom Moody" class="team-photo" loading="lazy">
+        <h3>Tom Moody</h3>
+        <span class="role">Managing Director</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/jon_reeves.jpg" alt="Jon Reeves" class="team-photo" loading="lazy">
+        <h3>Jon Reeves</h3>
+        <span class="role">Business Development Director</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/hayley_moody.jpg" alt="Hayley Moody" class="team-photo" loading="lazy">
+        <h3>Hayley Moody</h3>
+        <span class="role">Chairperson</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/janine_franks.jpg" alt="Janine Franks" class="team-photo" loading="lazy">
+        <h3>Janine Franks</h3>
+        <span class="role">Revenue Operations Director</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/rob_elliot.jpg" alt="Rob Elliot" class="team-photo" loading="lazy">
+        <h3>Rob Elliot</h3>
+        <span class="role">Commercial Director</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/becci_stacey.jpg" alt="Becci Stacey" class="team-photo" loading="lazy">
+        <h3>Becci Stacey</h3>
+        <span class="role">Accounts Assistant</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/tom_oliver.jpg" alt="Tom Oliver" class="team-photo" loading="lazy">
+        <h3>Tom Oliver</h3>
+        <span class="role">Maintenance &amp; Arboriculture/Ecology Manager</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/gavin_wells.jpg" alt="Gavin Wells" class="team-photo" loading="lazy">
+        <h3>Gavin Wells</h3>
+        <span class="role">Landscaping Manager</span>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-photo placeholder" aria-hidden="true">AK</div>
+        <h3>Asa Kinch</h3>
+        <span class="role">Landscaping Foreman</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/dan_dibden.jpg" alt="Dan Dibden" class="team-photo" loading="lazy">
+        <h3>Dan Dibden</h3>
+        <span class="role">Fencing &amp; Customer Care Manager</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/carly_bull.jpg" alt="Carly Bull" class="team-photo" loading="lazy">
+        <h3>Carly Bull</h3>
+        <span class="role">Buyer</span>
+      </div>
+
+      <div class="team-card reveal">
+        <img src="team-photos/lisa_wright.jpg" alt="Lisa Wright" class="team-photo" loading="lazy">
+        <h3>Lisa Wright</h3>
+        <span class="role">Finance Manager</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section class="trust">
   <div class="wrap">
     <p>"Involved from a project's inception right through to its completion."</p>
@@ -1211,6 +1304,27 @@
     });
   }, {threshold:0.15});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const team = document.getElementById('team');
+  function openTeam(){
+    team.classList.add('open');
+    team.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  }
+  document.querySelectorAll('a[href="#team"]').forEach(link=>{
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      const opening = !team.classList.contains('open');
+      team.classList.toggle('open');
+      if (opening){
+        team.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+        team.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
+  if (location.hash === '#team'){
+    openTeam();
+    team.scrollIntoView({block:'start'});
+  }
 
   const lightbox = document.getElementById('photoLightbox');
   const lightboxGrid = lightbox.querySelector('.lightbox-grid');
