@@ -548,6 +548,20 @@
     margin:18px 0 48px;
     max-width:16ch;
   }
+  .work-group{
+    margin-bottom:48px;
+  }
+  .work-group:last-child{
+    margin-bottom:0;
+  }
+  .work-group-title{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--moss);
+    margin-bottom:16px;
+  }
   .work-grid{
     display:grid;
     grid-template-columns:repeat(6, 1fr);
@@ -1033,79 +1047,121 @@
   <div class="wrap">
     <div class="eyebrow">Selected work</div>
     <h2 class="reveal">A few sites we've shaped.</h2>
-    <div class="work-grid">
+    <div class="work-group">
+      <h3 class="work-group-title">Fencing</h3>
+      <div class="work-grid">
 
-      <div class="work-tile wide reveal">
-        <img src="https://images.squarespace-cdn.com/content/v1/69b7f1248590e83599e2d443/10951347-c9f6-4fe7-90f5-e720b948b9c2/RIH_9527.JPG" alt="Completed landscaping site" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">Commercial &middot; Landscaping</span>
-          <h3>Site handover, Southwest England</h3>
+        <div class="work-tile narrow reveal">
+          <img src="work-photos/commercial_fencing_1.jpg" alt="Driveway boundary fencing" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Commercial Fencing</span>
+            <h3>Driveway boundary fencing</h3>
+          </div>
         </div>
-      </div>
 
-      <div class="work-tile narrow reveal">
-        <img src="https://images.squarespace-cdn.com/content/v1/69b7f1248590e83599e2d443/88f166f4-b05e-4953-9b26-89d195cf96c9/IMG-20240319-WA0017.jpg" alt="Crew working on site" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">On site</span>
-          <h3>Crew at work</h3>
+        <div class="work-tile wide reveal">
+          <img src="work-photos/commercial_fencing_2.jpg" alt="Post and wire fencing, public green space" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Commercial Fencing</span>
+            <h3>Post and wire fencing, public green space</h3>
+          </div>
         </div>
-      </div>
 
-      <div class="work-tile narrow reveal">
-        <div class="work-caption">
-          <span class="tag">Commercial Fencing</span>
-          <h3>Driveway boundary fencing</h3>
+        <div class="work-tile wide reveal">
+          <img src="work-photos/gates_1.jpg" alt="Bespoke timber garden gate" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Gates</span>
+            <h3>Bespoke timber garden gate</h3>
+          </div>
         </div>
-      </div>
 
-      <div class="work-tile wide reveal">
-        <img src="work-photos/commercial_fencing_2.jpg" alt="Post and wire fencing, public green space" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">Commercial Fencing</span>
-          <h3>Post and wire fencing, public green space</h3>
+        <div class="work-tile narrow reveal">
+          <img src="work-photos/garden_fencing_1.jpg" alt="Close-board garden fencing" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Garden Fencing</span>
+            <h3>Close-board garden fencing</h3>
+          </div>
         </div>
-      </div>
 
-      <div class="work-tile wide reveal">
-        <img src="work-photos/gates_1.jpg" alt="Bespoke timber garden gate" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">Gates</span>
-          <h3>Bespoke timber garden gate</h3>
-        </div>
       </div>
-
-      <div class="work-tile narrow reveal">
-        <div class="work-caption">
-          <span class="tag">Garden Fencing</span>
-          <h3>Close-board garden fencing</h3>
-        </div>
-      </div>
-
-      <div class="work-tile narrow reveal">
-        <img src="work-photos/lawn_care.jpg" alt="Freshly cut striped lawn" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">Lawn Care</span>
-          <h3>Freshly cut striped lawn</h3>
-        </div>
-      </div>
-
-      <div class="work-tile narrow reveal">
-        <img src="work-photos/plant_care.jpg" alt="Border planting in full bloom" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">Plant Care</span>
-          <h3>Border planting in full bloom</h3>
-        </div>
-      </div>
-
-      <div class="work-tile narrow reveal">
-        <img src="work-photos/hedging.jpg" alt="Hedge maintenance, front garden" loading="lazy">
-        <div class="work-caption">
-          <span class="tag">Hedging</span>
-          <h3>Hedge maintenance, front garden</h3>
-        </div>
-      </div>
-
     </div>
+
+    <div class="work-group">
+      <h3 class="work-group-title">Landscaping</h3>
+      <div class="work-grid">
+
+        <div class="work-tile wide reveal">
+          <img src="https://images.squarespace-cdn.com/content/v1/69b7f1248590e83599e2d443/88f166f4-b05e-4953-9b26-89d195cf96c9/IMG-20240319-WA0017.jpg" alt="Crew working on site" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">On site</span>
+            <h3>Crew at work</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="work-group">
+      <h3 class="work-group-title">Domestic</h3>
+      <div class="work-grid">
+
+        <div class="work-tile narrow tall reveal">
+          <img src="work-photos/domestic_aerial_patio.jpg" alt="Patios" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Domestic Landscaping</span>
+            <h3>Patios</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="work-group">
+      <h3 class="work-group-title">Commercial</h3>
+      <div class="work-grid">
+
+        <div class="work-tile wide reveal">
+          <img src="https://images.squarespace-cdn.com/content/v1/69b7f1248590e83599e2d443/10951347-c9f6-4fe7-90f5-e720b948b9c2/RIH_9527.JPG" alt="Completed landscaping site" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Commercial &middot; Landscaping</span>
+            <h3>Site handover, Southwest England</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="work-group">
+      <h3 class="work-group-title">Maintenance</h3>
+      <div class="work-grid">
+
+        <div class="work-tile narrow reveal">
+          <img src="work-photos/lawn_care.jpg" alt="Freshly cut striped lawn" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Lawn Care</span>
+            <h3>Freshly cut striped lawn</h3>
+          </div>
+        </div>
+
+        <div class="work-tile narrow reveal">
+          <img src="work-photos/plant_care.jpg" alt="Border planting in full bloom" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Plant Care</span>
+            <h3>Border planting in full bloom</h3>
+          </div>
+        </div>
+
+        <div class="work-tile narrow reveal">
+          <img src="work-photos/hedging.jpg" alt="Hedge maintenance, front garden" loading="lazy">
+          <div class="work-caption">
+            <span class="tag">Hedging</span>
+            <h3>Hedge maintenance, front garden</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
