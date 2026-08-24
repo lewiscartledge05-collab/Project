@@ -1074,9 +1074,12 @@
     link.addEventListener('click', function(e){
       e.preventDefault();
       const team = document.getElementById('team');
-      team.classList.add('open');
-      team.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-      team.scrollIntoView({behavior:'smooth', block:'start'});
+      const opening = !team.classList.contains('open');
+      team.classList.toggle('open');
+      if (opening){
+        team.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+        team.scrollIntoView({behavior:'smooth', block:'start'});
+      }
     });
   });
 </script>
