@@ -271,8 +271,10 @@
     transition:transform .5s ease;
   }
   .service-card:hover .service-photo img{transform:scale(1.06);}
-  #fencingSlideshow img,
-  #maintenanceSlideshow img{
+  .service-card.big-photo{
+    min-height:460px;
+  }
+  .service-card.big-photo .service-photo img{
     object-fit:contain;
     background:var(--ink);
   }
@@ -920,7 +922,7 @@
     <h2 class="reveal">Five ways we shape a site, start to finish.</h2>
     <div class="service-grid">
 
-      <div class="service-card reveal">
+      <div class="service-card reveal big-photo">
         <div class="service-photo slideshow" id="maintenanceSlideshow">
           <img src="work-photos/lawn_care.jpg" alt="Lawn cutting" class="active" loading="lazy">
           <img src="work-photos/plant_care.jpg" alt="Plant care" loading="lazy">
@@ -939,7 +941,7 @@
         </div>
       </div>
 
-      <div class="service-card reveal">
+      <div class="service-card reveal big-photo">
         <div class="service-photo slideshow" id="fencingSlideshow">
           <img src="work-photos/commercial_fencing_2.jpg" alt="Post and wire fencing" class="active" loading="lazy">
           <img src="work-photos/gates_1.jpg" alt="Garden gates" loading="lazy">
@@ -956,7 +958,7 @@
         </div>
       </div>
 
-      <div class="service-card reveal">
+      <div class="service-card reveal big-photo">
         <div class="service-photo slideshow" id="domesticSlideshow">
           <img src="work-photos/domestic_aerial_patio.jpg" alt="Patios" class="active" loading="lazy">
         </div>
