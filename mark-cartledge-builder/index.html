@@ -233,24 +233,6 @@
   .why-card h3{font-size:16.5px; color:var(--white); margin-bottom:8px;}
   .why-card p{font-size:14px; color:#B9C0C7;}
 
-  /* ---------- GALLERY ---------- */
-  .gallery-grid{display:grid; grid-template-columns:repeat(4, 1fr); gap:18px;}
-  .gallery-tile{
-    aspect-ratio:1/1;
-    border-radius:var(--radius);
-    background:var(--cream-dim);
-    border:1px solid var(--line);
-    display:flex; flex-direction:column; align-items:center; justify-content:center;
-    gap:10px; color:var(--slate);
-    text-align:center; padding:16px;
-  }
-  .gallery-tile svg{color:var(--brick);}
-  .gallery-tile span{font-family:'Poppins', sans-serif; font-weight:600; font-size:13.5px; color:var(--charcoal);}
-  .gallery-note{
-    margin-top:28px; font-size:14px; color:var(--slate);
-    border-left:3px solid var(--brick); padding-left:14px;
-  }
-
   /* ---------- CONTACT ---------- */
   .contact-grid{display:grid; grid-template-columns:1fr 1.15fr; gap:56px;}
   .contact-info-card{
@@ -301,7 +283,6 @@
     .about-photo{max-width:340px;}
     .services-grid{grid-template-columns:repeat(2, 1fr);}
     .why-grid{grid-template-columns:repeat(2, 1fr);}
-    .gallery-grid{grid-template-columns:repeat(2, 1fr);}
     .contact-grid{grid-template-columns:1fr;}
     .field-row{grid-template-columns:1fr;}
     .hero h1{font-size:36px;}
@@ -309,7 +290,6 @@
   @media (max-width:560px){
     .services-grid{grid-template-columns:1fr;}
     .why-grid{grid-template-columns:1fr;}
-    .gallery-grid{grid-template-columns:1fr;}
     section{padding:64px 0;}
     .wrap{padding:0 20px;}
   }
@@ -329,7 +309,7 @@
     <div class="nav-links" id="navLinks">
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
+      <a href="work.html">Gallery</a>
       <a href="#contact">Contact</a>
       <a href="#contact" class="btn btn-primary">Get a Quote</a>
     </div>
@@ -511,52 +491,6 @@
     </div>
   </section>
 
-  <!-- ---------- GALLERY ---------- -->
-  <section id="gallery" style="background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow">Recent Work</div>
-        <h2>A look at what Mark covers</h2>
-        <p>Photo gallery of finished jobs to follow — here's the range of work Mark takes on in the meantime.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M5 12v4a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4v-4"/></svg>
-          <span>Bathrooms</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="11" rx="1"/><path d="M7 9V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"/></svg>
-          <span>Kitchens</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M3 21V10l9-6 9 6v11"/></svg>
-          <span>Patios</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l4-3 4 3v12"/><path d="M12 21V9l4-3 4 3v12"/></svg>
-          <span>Fencing</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          <span>Drainage</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 17 3l4 4L7 21H3z"/></svg>
-          <span>Plastering</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3 6 15l-2 6 6-2L22 7z"/></svg>
-          <span>Painting</span>
-        </div>
-        <div class="gallery-tile">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 3v18M15 3v18M4 9h16M4 15h16"/></svg>
-          <span>Stud Walls</span>
-        </div>
-      </div>
-      <p class="gallery-note">Have before/after photos of your work? Send them over and this section can be swapped for a real project gallery.</p>
-    </div>
-  </section>
-
   <!-- ---------- CONTACT ---------- -->
   <section id="contact">
     <div class="wrap contact-grid">
@@ -651,7 +585,7 @@
       <div class="footer-nav">
         <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
+        <a href="work.html">Gallery</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
